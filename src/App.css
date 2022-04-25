@@ -90,3 +90,15 @@ button {
   border: 1px solid gray;
   border-radius: 5px;
 }
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: auto;
+}
+
+.backg {
+  background-color: gray;
+  color: white;
+}
