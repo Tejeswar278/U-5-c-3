@@ -10,7 +10,7 @@ export const EmployeeDetails = () => {
     }, []);
 
     const getemploy = async () => {
-        const {data} =  await axios(`http://localhost:8080/employ/${id}`);
+        const {data} =  await axios(`http://localhost:8080/employee/${id}`);
         setemploy(data);
     }
 
