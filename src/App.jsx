@@ -9,7 +9,7 @@ import {EmployeeDetails} from './components/EmployeeDetails';
 import {Admin} from './components/Admin';
 import {Navbar} from './components/Navbar';
 import {Logout} from './components/Logout';
-import {ProtectRouter} from './components/Privateroute';
+import {ProtectRoute} from './components/Privateroute';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,9 +24,9 @@ function App() {
         <Route 
           path='/employees/:id'
           element={
-            <ProtectRouter>
+            <ProtectRoute>
               <EmployeeDetails></EmployeeDetails>
-            </ProtectRouter>
+            </ProtectRoute>
           }
           ></Route>
           <Route path='/admin' element={<Admin></Admin>}></Route>

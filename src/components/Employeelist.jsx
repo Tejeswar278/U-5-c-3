@@ -12,7 +12,7 @@ export const EmployeeList = () => {
 
     const getEmploys = async () => {
         const { data } = await axios('http://localhost:8080/employee');
-		setEmployees(data);
+		setEmploys(data);
     }
     return (
       <div className="list_container">
