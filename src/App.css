@@ -96,9 +96,25 @@ button {
   justify-content: space-between;
   width: 20%;
   margin: auto;
+  padding: 4px;
 }
 
 .backg {
   background-color: gray;
   color: white;
+}
+
+.createEmployee {
+  display: grid;
+  width: 20%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 4px;
+}
+
+.loginform {
+  display: grid;
+  width: 20%;
+  margin: auto;
+  margin-top: 50px;
 }

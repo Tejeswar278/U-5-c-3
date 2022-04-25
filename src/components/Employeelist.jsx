@@ -9,6 +9,7 @@ export const EmployeeList = () => {
     useEffect(() => {
         getEmploys();
     }, []);
+    console.log(employs)
 
     const getEmploys = async () => {
         const { data } = await axios('http://localhost:8080/employee');
