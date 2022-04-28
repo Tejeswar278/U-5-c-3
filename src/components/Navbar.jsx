@@ -14,13 +14,22 @@ export const Navbar = () => {
           Admin
         </Link>
         {/* Show Either logout or login based on auth context. DO NOT show both */}
-        <Link className="nav-logout" to="/logout">
+        {/* <Link className="nav-logout" to="/logout">
           Logout
         </Link>
   
         <Link className="nav-login" to="/login">
           Login
-        </Link>
+        </Link> */}
+        {isAuth ? (
+				<Link className='nav-logout' to='/logout'>
+					Logout
+				</Link>
+			) : (
+				<Link className='nav-login' to='/login'>
+					Login
+				</Link>
+			)}
       </div>
     );
   };
